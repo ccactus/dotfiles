@@ -2,7 +2,7 @@
 
 OS=$(uname)
 if [ "$OS" == "Darwin" ]; then
-  $(brew --prefix)/etc/bash_completion # Bash completion (installed via Homebrew)
+  . $(brew --prefix)/etc/bash_completion # Bash completion (installed via Homebrew)
 else 
   if ! shopt -oq posix; then
     if [ -f /usr/share/bash-completion/bash_completion ]; then
