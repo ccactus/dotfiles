@@ -11,7 +11,8 @@ alias ~="cd ~"
 # List dir contents aliases
 # ref: http://ss64.com/osx/ls.html
 # Lazy form with retaining colour through unbuffer
-alias l='unbuffer ls -opG | awk '\''{print $1, $8}'\'''
+alias l="unbuffer ls -opG | awk '{print\$1,\$8}'"
+alias ll="unbuffer ls -opG | awk '{print\$1,\$8}'"
 
 # Order by last modified, long form no user group, color
 alias lt="ls -toG"
