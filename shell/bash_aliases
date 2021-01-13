@@ -11,7 +11,7 @@ alias ~="cd ~"
 # List dir contents aliases
 # ref: http://ss64.com/osx/ls.html
 # Lazy form with retaining colour through unbuffer
-alias l="unbuffer ls -opG | awk '{print\$1,\$8}'"
+alias l="unbuffer ls -lopG | awk '{print\$1,\$8}'"
 alias ll="unbuffer ls -opG | awk '{print\$1,\$8}'"
 
 # Order by last modified, long form no user group, color
@@ -20,6 +20,15 @@ alias lt="ls -toG"
 alias la="ls -AGFoh"
 # List all except . and ..., color, mark file types, long form no use group, order by last modified, file size
 alias lat="ls -AGFoth"
+
+# Git aliases
+alias gs="git status"
+alias ga="git add"
+alias gap="git add -p"
+alias gm="git commit"
+alias gmm="git commit -m"
+alias gre="git pull --rebase"
+alias gpu="git push"
 
 
 # Empty the Trash on all mounted volumes and the main HDD
